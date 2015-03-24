@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace Assignment9.Models
 {
@@ -40,5 +41,10 @@ namespace Assignment9.Models
         public string Publisher { get; set; }
 
         public int Score { get; set; }
+    }
+
+    public class GameDBContext : DbContext
+    {
+        public DbSet<Game> Games { get; set; }
     }
 }
