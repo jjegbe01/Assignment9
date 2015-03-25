@@ -79,11 +79,18 @@
 		  <p>After completing the model, I generated a new controller based on the model. Creating this controller also generated the views I needed to work with the data (Index, Details, Create, Edit, Delete.)</p>
 		  <p>Once this was finished, I edited the HTML inside of the Details view to match the layout of the assignment specifications as closely as possible. From the Details view, there is an Edit button that will allow you to edit the object.</p>
 		  <p>I also made sure to seed the database with test data to make sure that it doesn't throw errors when running for the first time.</p>
-		  <p>The project has been deployed to azure, but for some reason, azure is giving errors when attempting to access the Index view.</p>
-          
-		  
+		  <p><b>The project has been deployed to azure, but for some reason, azure is giving errors when attempting to access any views past the home page. For more details about what I encountered, see below. </b></p>
+		  <br />
+		  <br />
+		  <br />
+		  <p>Locally, the project runs perfectly. Once deployed to azure, attempting to view the Index/Details/Edit/Delete views all throw a generic error. Going to the Create view works, but attempting to create an object also throws the same generic error.</p>
+		  <p>This seems to happen regardless of whether I connect the site to a database in azure while deploying it. It's throwing generic errors for security reasons, so I went into my web.config file and added "customErrors mode="Off"" to the appropriate area so that it would display errors that were more specific.</p>
+		  <p>However, adding this one line of code to the web.config file caused the website to not work at all once deployed to azure. Instead, navigating to the homepage would only result in azure's generic "This Web App has been Successfully Created" web page, instead of the homepage of my project. Undoing that line of code in the web.config file does fix this problem, but also leaves me back where I started.</p>
+		  <p>I've not yet found a solution to this issue, so I attached an image of my layout below so that you can compare it to the assignment requirements. Editing the object does work, and the changes do persist. The code is also available in the github repo.</p>
         </div>
-       
+       <div class="col-md-8">
+			<img src="images/detailsImage.png" />
+	   </div>
       </div>
 
       <hr>
