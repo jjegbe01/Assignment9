@@ -57,6 +57,29 @@
       <div class="row">
         <div class="col-md-12">
           <h2>How I completed this assignment</h2>
+		  <p>I started off by evaluating the sample structure given to us for the assignment. The structure we were supposed to follow featured the following:</p>
+		  <ul>
+		  <li>9 unique elements assigned to the page</li>
+		  <li>An image, which was to be hard coded in</li>
+		  <li>An Edit button, which would allow someone to adjust each of the 9 unique elements.</li>
+		  </ul>
+		  <p>After identifying these core components, I created a new MVC project in Visual Studio. I decided to create a similar layout, but for software products.</p>
+		  <p>After creating a new MVC project, I started by creating the model for our objects. I named it Game.cs, and gave it the following attributes:</p>
+		  <ul>
+		  <li>Title</li>
+		  <li>ReleaseDate</li>
+		  <li>Genre</li>
+		  <li>Price</li>
+		  <li>esrbRating</li>
+		  <li>Description</li>
+		  <li>Developer</li>
+		  <li>Publisher</li>
+		  <li>Score</li>
+		  </ul>
+		  <p>After completing the model, I generated a new controller based on the model. Creating this controller also generated the views I needed to work with the data (Index, Details, Create, Edit, Delete.)</p>
+		  <p>Once this was finished, I edited the HTML inside of the Details view to match the layout of the assignment specifications as closely as possible. From the Details view, there is an Edit button that will allow you to edit the object.</p>
+		  <p>I also made sure to seed the database with test data to make sure that it doesn't throw errors when running for the first time.</p>
+		  <p>The project has been deployed to azure, but for some reason, azure is giving errors when attempting to access the Index view.</p>
           
 		  
         </div>
